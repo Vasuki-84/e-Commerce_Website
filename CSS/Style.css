@@ -1,0 +1,142 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: rgb(42, 42, 42);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    ;
+    justify-content: center;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.slidenew div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Collections:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.footerItems div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/* Default carousel size */
+.custom-carousel {
+    width: 100%;
+    height: 400px;
+}
+
+.custom-carousel .carousel-inner,
+.custom-carousel .carousel-item,
+.custom-carousel img {
+    height: 100%;
+    width: 100%;
+}
+
+/* For screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+    .custom-carousel {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+/* For screens larger than 1200px (desktop) */
+@media (min-width: 1200px) {
+    .custom-carousel {
+        height: 600px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/* for rounded carosuel */
+/* Default carousel size */
+.resize-carousel img {
+    width: 500px;
+    height: 500px;
+    margin: 0%
+}
+
+.resize-carousel .carousel-inner,
+.resize-carousel .carousel-item,
+.resize-carousel img {
+    height: 100%;
+    margin: 0%;
+}
+
+@media (max-width: 768px) {
+    .resize-carousel {
+        height: 300px;
+        width: 250px;
+        margin: 5px;
+        justify-content: center;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .resize-carousel {
+        height: 600px;
+        width: 300px;
+        margin: 0px;
+        justify-content: center;
+    }
+}
+
+/* cards */
+.custom-card {
+    margin: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        width: 400px;
+        height: 350px;
+        justify-content: center;
+
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .custom-card {
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+
+    }
+}
