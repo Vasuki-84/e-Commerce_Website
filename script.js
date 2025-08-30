@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         signUpForm.addEventListener("submit", function (e) {
             e.preventDefault();
        
-    
-
     let validationSuccess = true;
 
     // regex pattern 
