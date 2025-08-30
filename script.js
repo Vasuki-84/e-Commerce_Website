@@ -1,13 +1,17 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Redirect to signup.html when clicking the link
     const signUp = document.getElementById("signUpLink");
-    signUp.addEventListener("click", function (e) {
-        e.preventDefault();
-        window.location.href = "signup.html";
-    });
- })
+    //     // Redirect to signup.html when clicking the link
+
+    if (signUp) {  
+        signUp.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.location.href = "signup.html";
+        });
+    }
+});
+
+
     // for getting us into signup form
     document.addEventListener("DOMContentLoaded", () => {
        const signUpForm = document.getElementById("signupForm");
