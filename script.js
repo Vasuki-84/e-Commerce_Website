@@ -12,12 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-    // for getting us into signup form
+   // for getting us into signup form
     document.addEventListener("DOMContentLoaded", () => {
        const signUpForm = document.getElementById("signupForm");
 
         signUpForm.addEventListener("submit", function (e) {
         e.preventDefault();
+
+  
+
 
         let validationSuccess = true;
 
@@ -61,9 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
        
-    });
+  });
+  })
 
-})
+
+
 
 
 

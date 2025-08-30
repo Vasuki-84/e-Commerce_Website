@@ -76,7 +76,7 @@ footer {
 @media (min-width: 1200px) {
     .custom-carousel {
         height: 600px;
-        width: 98%;
+        width: 100%;
         margin: auto;
     }
 }
