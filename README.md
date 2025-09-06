@@ -1,4 +1,4 @@
-# Shoes Ecommerce Website
+<img width="1919" height="841" alt="image" src="https://github.com/user-attachments/assets/38e923b9-20ce-41d0-848f-054d44be5e89" /># Shoes Ecommerce Website
 
 An elegant and responsive **e-commerce website that showcases shoes**, built with  HTML, CSS, JavaScript,Bootstrap.
 
@@ -6,8 +6,9 @@ An elegant and responsive **e-commerce website that showcases shoes**, built wit
 
 ##  Demo
 *Show off your project!*
-- **Live Preview:**
-- **Screenshots:**  
+- **Live Preview:** https://vasuki-84.github.io/e-Commerce_Website/
+- **Screenshots:** "C:\Users\vasuk\OneDrive\Pictures\Screenshots\Screenshot 2025-09-06 171444.png"
+
  
 
 ---
