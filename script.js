@@ -15,54 +15,70 @@ document.addEventListener("DOMContentLoaded", () => {
 // for getting us into signup form
 document.addEventListener("DOMContentLoaded", () => {
     const signUpForm = document.getElementById("signupForm");
-     if (signUpForm) { 
+    if (signUpForm) {
         signUpForm.addEventListener("submit", function (e) {
             e.preventDefault();
-       
-    let validationSuccess = true;
 
-    // regex pattern 
-    const namePattern = /^[A-Za-z]+$/;
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordPattern = /^[A-Za-z0-9!@#$%^&*/]{8,}$/;
+            let validationSuccess = true;
 
-    // Input fields
-    const username = document.getElementById("userName");
-    const email = document.getElementById("Email");
-    const password = document.getElementById("password");
+            // regex pattern 
+            const namePattern = /^[A-Za-z]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordPattern = /^[A-Za-z0-9!@#$%^&*/]{8,}$/;
 
-    // clear previous errors
-    document.querySelectorAll(".error").forEach(clear => clear.textContent = "");
+            // Input fields
+            const username = document.getElementById("userName");
+            const email = document.getElementById("Email");
+            const password = document.getElementById("passwordInput");
 
-    // testing username 
-    if (!namePattern.test(username.value)) {
-        document.getElementById("usernameError").innerText = "Username must contain letters";
-        validationSuccess = false;
+
+            // clear previous errors
+            document.querySelectorAll(".error").forEach(clear => clear.textContent = "");
+
+            // testing username 
+            if (!namePattern.test(username.value)) {
+                document.getElementById("usernameError").innerText = "Username must contain letters";
+                validationSuccess = false;
+            }
+
+            //testing email
+            if (!emailPattern.test(email.value)) {
+                document.getElementById("EmailError").innerText = "Enter the valid Email";
+                validationSuccess = false;
+            }
+
+            // testing password
+            if (!passwordPattern.test(password.value)) {
+                document.getElementById("PasswordError").innerText = "Password must contain 8 charaters";
+                validationSuccess = false;
+            }
+
+            if (validationSuccess) {
+                alert("Signup successful! Redirecting to Home...");
+                signUpForm.reset();
+                setTimeout(() => {
+                    window.location.href = "index.html"; // Go back to main page
+                }, 2000);
+            }
+        });
     }
+    const passwordInput = document.getElementById("passwordInput");
+    const hidePassword = document.getElementById("hidePassword");
 
-    //testing email
-    if (!emailPattern.test(email.value)) {
-        document.getElementById("EmailError").innerText = "Enter the valid Email";
-        validationSuccess = false;
-    }
+    let toggle = false;
+    hidePassword.addEventListener("click", () => {
+        if (!toggle) {
+            hidePassword.innerHTML = `<i class="bi bi-eye-fill"></i>`
+            passwordInput.type = "text";
+            toggle = true;
 
-    // testing password
-    if (!passwordPattern.test(password.value)) {
-        document.getElementById("PasswordError").innerText = "Password must contain 8 charaters";
-        validationSuccess = false;
-    }
-
-    if (validationSuccess) {
-        alert("Signup successful! Redirecting to Home...");
-        signUpForm.reset();
-        setTimeout(() => {
-            window.location.href = "index.html"; // Go back to main page
-        }, 2000);
-    }
- });
-    }
+        } else {
+            hidePassword.innerHTML = `<i class="bi bi-eye-slash-fill"></i>`
+            passwordInput.type = "password";
+        }
+    })
 });
-  
+
 
 
 
