@@ -22,7 +22,6 @@ An elegant and responsive **e-commerce website that showcases shoes**, built wit
 
 - Display a curated **catalog of shoes** with appealing visuals
 - **Responsive design** to ensure a seamless experience on all devices
-=======
 - Display a curated **catalog of shoes** 
 - **Responsive design**
 
