@@ -5,11 +5,6 @@ An elegant and responsive **e-commerce website that showcases shoes**, built wit
 =======
 # Shoes Ecommerce Website
 
-
-An elegant and responsive **e-commerce website that showcases shoes**, built with  HTML, CSS, Booystrap ,JavaScript.
-=======
-
-
 ---
 
 ##  Demo
