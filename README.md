@@ -11,14 +11,9 @@ An elegant and responsive **e-commerce website that showcases shoes**, built wit
 
 - **Live Preview:** https://vasuki-84.github.io/e-Commerce_Website/
 
-
- 
-=======
-- **Live Preview:** _Add a deployed demo link here (e.g., GitHub Pages, Netlify, etc.)_
-- **Screenshots:**  
-  ![Desktop view](link-to-desktop-screenshot)  
-  ![Mobile view](link-to-mobile-screenshot)
-
+- **Screenshots:**
+  <img width="1919" height="841" alt="image" src="https://github.com/user-attachments/assets/38e923b9-20ce-41d0-848f-054d44be5e89" /># Desktop view
+  <img width="1919" height="841" alt="image" src="https://github.com/user-attachments/assets/38e923b9-20ce-41d0-848f-054d44be5e89" /># mobile view
 
 ---
 
