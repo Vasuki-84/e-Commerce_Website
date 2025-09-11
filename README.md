@@ -10,7 +10,7 @@ An elegant and responsive **e-commerce website that showcases shoes**, built wit
 ##  Demo
 
 - **Live Preview:** https://vasuki-84.github.io/e-Commerce_Website/
-- **Screenshots:** C:\Users\vasuk\OneDrive\Pictures\Screenshots\Screenshot 2025-09-06 171444.png
+
 
  
 =======
