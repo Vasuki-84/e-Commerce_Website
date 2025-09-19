@@ -21,11 +21,11 @@ function display(products) {
 
     // create womens shoes products inside HTML tags
     column.innerHTML = `
-      <div class= "card-product-card shadow-lg h-100 p-3 ">
+      <div class= "card-product-card   card border-dark-subtle  shadow-lg h-100 p-3 ">
 
-       <img src="${singleProduct.thumbnail}" class="card-img-top p-4" />
-    <div class="card-body d-flex flex-column">
-    <h6 class="card-title text-truncate m-2">${singleProduct.title}</h6> 
+      <img src="${singleProduct.thumbnail}" class="card-img-top p-4" />
+      <div class="card-body d-flex flex-column">
+      <h6 class="card-title text-truncate m-2">${singleProduct.title}</h6> 
       <div class="d-flex align-items-center justify-content-between">
             <h6 class="card-text fw-bold text-success ">$${singleProduct.price}</h6>
              <p class="fw-bold">⭐${singleProduct.rating}</p>
@@ -46,6 +46,6 @@ fetchWomensShoes();
 
 
 
-  
+
 
 
