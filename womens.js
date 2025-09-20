@@ -41,6 +41,44 @@ function display(products) {
 }
 fetchWomensShoes();
 
+let products = [];
+        fetch("https://dummyjson.com/products/category/womens-shoes")
+        .then(response => response.json())
+        .then(data=> {
+            products = data.products;
+        })
+
+        function searchProduct(){
+            const keyword = document.getElementById("searchInput").value.toLowerCase();  // convert into lowercase to get exact response from API
+            const product = products.find(p =>
+            p.title.toLowerCase().includes(keyword));
+             if(product)
+            {
+                document.getElementById("searchedProducts").innerHTML =
+                ` 
+               <div class= "card-product-card m-5  card border-dark-subtle  shadow-lg h-60 p-3 " style="width: 18rem;">
+
+      <img src="${product.thumbnail}" class="card-img-top p-4" />
+      <div class="card-body d-flex flex-column">
+      <h6 class="card-title text-truncate m-2">${product.title}</h6> 
+      <div class="d-flex align-items-center justify-content-between">
+            <h6 class="card-text fw-bold text-success ">$${product.price}</h6>
+             <p class="fw-bold">⭐${product.rating}</p>
+      </div>
+            <h6 class="card-title text-truncate mb-3">${product.description}</h6>
+            <button class="btn btn-primary mt-auto">Add to Cart</button>
+    </div>
+    </div>
+                
+                `
+            }else{
+                document.getElementById("searchedProducts").textContent = "No products found";
+            }
+
+           
+        }
+        
+
 
 
 
